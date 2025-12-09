@@ -21,4 +21,4 @@ The code is organized by topics:
 - `/arrays` - Vectors and Matrices.
 
 ---
-*Created by [Seu Nome]*
+*Created by Rafael Viana*
