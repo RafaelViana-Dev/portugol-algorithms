@@ -10,7 +10,7 @@ The main goal of this repository is to practice:
 
 ## 🛠️ Technologies
 - **Language:** Portugol (Pseudocode)
-- **Tools:** Portugol Studio / VisualG
+- **Tools:** Portugol Studio / VisualG / Visual Studio Code
 - **OS:** Linux (Ubuntu)
 
 ## 📂 Structure
