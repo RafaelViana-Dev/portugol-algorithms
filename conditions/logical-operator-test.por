@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
     real lado1, lado2, lado3 //variaveis do tipo real para receber os lados do triangulo
-    logico escaleno, equilatero //variaveis do tipo logico para receber o resultado da "expressao" de identificacao do triangulo
+    logico triangulo, escaleno, equilatero //variaveis do tipo logico para receber o resultado da "expressao" de identificacao do triangulo
 
     escreva("Teste dos Triângulos") //teste simples de triangulos para saber se e escaleno ou equilatero
 
@@ -13,10 +13,12 @@ programa {
     leia(lado3)
     limpa()
 
+    triangulo = (lado1 < lado2 + lado3) e (lado2 < lado3 + lado2) e (lado3 < lado2 + lado1) //expressao para identificar se a soma de dois lados e maior que um lado, ja que para ser um triangulo um lado tem que ser menor do que soma dos outros 2 lados
     escaleno = (lado1 != lado2) e (lado2 != lado3) //expressao --> se lado1 for diferente de lado2 E (operador logico) lado2 for diferente de lado3 entao isso e um triangulo escaleno
     equilatero = (lado1 == lado2) e (lado2 == lado3) //expressao --> se lado1 for igual ao lado2 E (operador logico) lado2 for igual ao lado3 entao isso e um triangulo equilatero
 
     escreva("Teste dos Triângulos")
+    escreva("\n Com seus valores é possivel ser um triângulo? (se o resultado aqui for FALSO desconsidere as respostas abaixo): ",triangulo) //exibindo se e ou nao um triângulo
     escreva("\n Seu Triângulo é escaleno? ",escaleno) //exibicao do resultado logico como verdadeiro ou falso
     escreva("\n Seu Triângulo é equilatero? ",equilatero)
 
