@@ -38,7 +38,10 @@ programa {
     se (validacao_nota == 0 e media > 7){
         escreva("MEDIA: ",media,"\n")
         escreva(Tex.caixa_alta("aluno aprovado! \n"))
-    } senao se (validacao_nota == 0 > 0 e media < 7){
+    } senao se (validacao_nota == 0 e media < 7 e media > 5){
+        escreva("MEDIA: ",media,"\n")
+        escreva(Tex.caixa_alta("aluno em recuperação! \n"))
+    } senao se(validacao_nota == 0 e media <= 5){
         escreva("MEDIA: ",media,"\n")
         escreva(Tex.caixa_alta("aluno reprovado! \n"))
     }
