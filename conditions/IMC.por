@@ -18,11 +18,27 @@ programa {
     escreva(Tex.caixa_alta("--- Teste imc ---\n"))
     escreva("Com peso de ",peso,"Kg e uma altura de ",altura,"mt seu IMC corresponde a ",imc,"\n") //exibindo os primeiros resultados
 
-    //estrutura condicional composta para exibir se o IMC está bom ou ruim
-    se (imc >= 18.5 e imc < 25){
-      escreva("Seu Imc está bom!")
+    se(imc < 18.5){
+       escreva("Abaixo do Peso!")
     } senao {
-      escreva("Seu Imc está ruim!")
+        se(imc >= 18.5 e imc <= 24.9){
+           escreva("Peso Normal")
+        } senao {
+            se(imc >= 25 e imc <= 29.9){
+               escreva("Sobrepeso")
+            } senao {
+                se(imc >= 30 e imc <= 34.9){
+                   escreva("Obesidade Grau I")
+                } senao {
+                    se(imc >= 35 e imc <= 39.9){
+                       escreva("Obesidade Grau II")
+                    } senao {
+                        escreva("Obesidade Grau III")
+                    }
+                }
+            }
+        }
     }
+    
   }
 }
