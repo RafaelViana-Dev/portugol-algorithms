@@ -19,6 +19,7 @@ The code is organized by topics:
 - `/conditions` - If/Else and Switch case structures.
 - `/loops` - For, While, and Do-While loops.
 - `/arrays` - Vectors and Matrices.
+- `/procedures` - Procedures and Functions.
 
 ---
 *Created by Rafael Viana*
