@@ -18,6 +18,7 @@ The code is organized by topics:
 - `/basics` - Hello World, variables, and input/output.
 - `/conditions` - If/Else and Switch case structures.
 - `/loops` - For, While, and Do-While loops.
+- `/procedures` - Procedures and Functions.
 - `/arrays` - Vectors and Matrices.
 
 ---
